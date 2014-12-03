@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		D338F2261A2FB62F0003A258 /* StrategicControllersUniversal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D338F2271A2FB62F0003A258 /* Build configuration list for PBXAggregateTarget "StrategicControllersUniversal" */;
+			buildPhases = (
+				D338F22A1A2FB6410003A258 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = StrategicControllersUniversal;
+			productName = StrategicControllersUniversal;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		D330708E1A04318100139A42 /* MultilineTextStrat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D330708D1A04318100139A42 /* MultilineTextStrat.swift */; };
 		D33070911A0456DC00139A42 /* SomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33070901A0456DC00139A42 /* SomeController.swift */; };
@@ -391,6 +405,9 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Brian Thomas";
 				TargetAttributes = {
+					D338F2261A2FB62F0003A258 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
 					D3DA87831A00491100534CE7 = {
 						CreatedOnToolsVersion = 6.0.1;
 					};
@@ -425,6 +442,7 @@
 				D3E4D26319F81F2400FD1DE9 /* StrategyPatternTests */,
 				D3DA87831A00491100534CE7 /* StrategicControllers */,
 				D3DA878D1A00491100534CE7 /* StrategicControllersTests */,
+				D338F2261A2FB62F0003A258 /* StrategicControllersUniversal */,
 			);
 		};
 /* End PBXProject section */
@@ -462,6 +480,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D338F22A1A2FB6410003A258 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TARGET_NAME=StrategicControllers\nOS_SDK=iphoneos8.1\nSIM_SDK=iphonesimulator8.1\nLIPO_FOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\nxcodebuild -target ${TARGET_NAME} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk ${OS_SDK} BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target ${TARGET_NAME} -scheme ${TARGET_NAME} -sdk ${SIM_SDK} -configuration Debug clean build BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\nmkdir -p \"${LIPO_FOLDER}\"\ncp -R ${BUILD_DIR}/${CONFIGURATION}-iphoneos/${TARGET_NAME}.framework ${LIPO_FOLDER}/\nrm ${LIPO_FOLDER}/${TARGET_NAME}.framework/${TARGET_NAME}\n\nlipo -create -output \"${LIPO_FOLDER}/${TARGET_NAME}.framework/${TARGET_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${TARGET_NAME}.framework/${TARGET_NAME}\" \"${BUILD_DIR}/Debug-iphonesimulator/${TARGET_NAME}.framework/${TARGET_NAME}\"\n\n# Comment this out or change the final_outputfolder if needed\nFINAL_OUTPUTFOLDER=/users/${USER}/Desktop/\nmkdir -p \"${FINAL_OUTPUTFOLDER}\"\ncp -R ${LIPO_FOLDER}/${TARGET_NAME}.framework ${FINAL_OUTPUTFOLDER}/";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D3DA877F1A00491100534CE7 /* Sources */ = {
@@ -553,6 +587,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D338F2281A2FB62F0003A258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D338F2291A2FB62F0003A258 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		D3DA879C1A00491100534CE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -767,6 +815,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D338F2271A2FB62F0003A258 /* Build configuration list for PBXAggregateTarget "StrategicControllersUniversal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D338F2281A2FB62F0003A258 /* Debug */,
+				D338F2291A2FB62F0003A258 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D3DA87A01A00491100534CE7 /* Build configuration list for PBXNativeTarget "StrategicControllers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
