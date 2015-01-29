@@ -21,6 +21,13 @@ class ApplicationVC : UIViewController {
         super.init(coder: aDecoder)
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ColorControllerPhone" {
+            let controller = segue.destinationViewController as StrategicController
+            controller.setStrategy(RedStrategy())
+        }
+    }
+    
     func transitionToVC(controller: UIViewController) {
         animateTransition(fromVC: activeVC, toController: controller)
         inactiveVCs.push(activeVC)
