@@ -6,35 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		D338F2261A2FB62F0003A258 /* StrategicControllersUniversal */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = D338F2271A2FB62F0003A258 /* Build configuration list for PBXAggregateTarget "StrategicControllersUniversal" */;
-			buildPhases = (
-				D338F22A1A2FB6410003A258 /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = StrategicControllersUniversal;
-			productName = StrategicControllersUniversal;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		D330708E1A04318100139A42 /* MultilineTextStrat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D330708D1A04318100139A42 /* MultilineTextStrat.swift */; };
 		D3C8D20B1AA0ED02000973E3 /* StrategyProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8D20A1AA0ED02000973E3 /* StrategyProtocols.swift */; };
 		D3C8D20D1AA11D09000973E3 /* RandomGenerators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8D20C1AA11D09000973E3 /* RandomGenerators.swift */; };
+		D3C8D20F1AA120C7000973E3 /* ControllerStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8D20E1AA120C7000973E3 /* ControllerStrategy.swift */; };
+		D3C8D2111AA120D4000973E3 /* StrategicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8D2101AA120D4000973E3 /* StrategicController.swift */; };
 		D3DA87891A00491100534CE7 /* StrategicControllers.h in Headers */ = {isa = PBXBuildFile; fileRef = D3DA87881A00491100534CE7 /* StrategicControllers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3DA87951A00491100534CE7 /* StrategicControllersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DA87941A00491100534CE7 /* StrategicControllersTests.swift */; };
 		D3DA87981A00491100534CE7 /* StrategicControllers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DA87841A00491100534CE7 /* StrategicControllers.framework */; };
 		D3DA87991A00491100534CE7 /* StrategicControllers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3DA87841A00491100534CE7 /* StrategicControllers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D3DA87A41A00494500534CE7 /* ControllerStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4D27A19F820F900FD1DE9 /* ControllerStrategy.swift */; };
-		D3DA87A61A00494C00534CE7 /* StrategicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4D27819F81F7B00FD1DE9 /* StrategicController.swift */; };
 		D3E4D25519F81F2400FD1DE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4D25419F81F2400FD1DE9 /* AppDelegate.swift */; };
 		D3E4D25A19F81F2400FD1DE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E4D25819F81F2400FD1DE9 /* Main.storyboard */; };
 		D3E4D25C19F81F2400FD1DE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3E4D25B19F81F2400FD1DE9 /* Images.xcassets */; };
 		D3E4D25F19F81F2400FD1DE9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3E4D25D19F81F2400FD1DE9 /* LaunchScreen.xib */; };
-		D3E4D26B19F81F2400FD1DE9 /* StrategyPatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4D26A19F81F2400FD1DE9 /* StrategyPatternTests.swift */; };
 		D3E4D27F19F84B9000FD1DE9 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4D27E19F84B9000FD1DE9 /* ColorViewController.swift */; };
 		D3E4D28119F84C5500FD1DE9 /* MovableStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4D28019F84C5500FD1DE9 /* MovableStrategy.swift */; };
 		D3E4D28319F84C6600FD1DE9 /* AnimatingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4D28219F84C6600FD1DE9 /* AnimatingStrategy.swift */; };
@@ -63,13 +48,6 @@
 			remoteGlobalIDString = D3DA87831A00491100534CE7;
 			remoteInfo = StrategicControllers;
 		};
-		D3E4D26519F81F2400FD1DE9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D3E4D24719F81F2300FD1DE9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D3E4D24E19F81F2300FD1DE9;
-			remoteInfo = StrategyPattern;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -90,6 +68,8 @@
 		D330708D1A04318100139A42 /* MultilineTextStrat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultilineTextStrat.swift; sourceTree = "<group>"; };
 		D3C8D20A1AA0ED02000973E3 /* StrategyProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrategyProtocols.swift; sourceTree = "<group>"; };
 		D3C8D20C1AA11D09000973E3 /* RandomGenerators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomGenerators.swift; sourceTree = "<group>"; };
+		D3C8D20E1AA120C7000973E3 /* ControllerStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerStrategy.swift; sourceTree = "<group>"; };
+		D3C8D2101AA120D4000973E3 /* StrategicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrategicController.swift; sourceTree = "<group>"; };
 		D3DA87841A00491100534CE7 /* StrategicControllers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StrategicControllers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3DA87871A00491100534CE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3DA87881A00491100534CE7 /* StrategicControllers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategicControllers.h; sourceTree = "<group>"; };
@@ -102,11 +82,6 @@
 		D3E4D25919F81F2400FD1DE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3E4D25B19F81F2400FD1DE9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D3E4D25E19F81F2400FD1DE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D3E4D26419F81F2400FD1DE9 /* StrategyPatternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrategyPatternTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3E4D26919F81F2400FD1DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3E4D26A19F81F2400FD1DE9 /* StrategyPatternTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyPatternTests.swift; sourceTree = "<group>"; };
-		D3E4D27819F81F7B00FD1DE9 /* StrategicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StrategicController.swift; path = ../StrategyPattern/StrategicController.swift; sourceTree = "<group>"; };
-		D3E4D27A19F820F900FD1DE9 /* ControllerStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControllerStrategy.swift; path = ../StrategyPattern/ControllerStrategy.swift; sourceTree = "<group>"; };
 		D3E4D27E19F84B9000FD1DE9 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		D3E4D28019F84C5500FD1DE9 /* MovableStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovableStrategy.swift; sourceTree = "<group>"; };
 		D3E4D28219F84C6600FD1DE9 /* AnimatingStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatingStrategy.swift; sourceTree = "<group>"; };
@@ -136,13 +111,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3E4D26119F81F2400FD1DE9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -161,8 +129,8 @@
 			children = (
 				D3DA87881A00491100534CE7 /* StrategicControllers.h */,
 				D3C8D20A1AA0ED02000973E3 /* StrategyProtocols.swift */,
-				D3E4D27A19F820F900FD1DE9 /* ControllerStrategy.swift */,
-				D3E4D27819F81F7B00FD1DE9 /* StrategicController.swift */,
+				D3C8D20E1AA120C7000973E3 /* ControllerStrategy.swift */,
+				D3C8D2101AA120D4000973E3 /* StrategicController.swift */,
 				D3DA87861A00491100534CE7 /* Supporting Files */,
 			);
 			path = StrategicControllers;
@@ -196,8 +164,7 @@
 		D3E4D24619F81F2300FD1DE9 = {
 			isa = PBXGroup;
 			children = (
-				D3E4D25119F81F2400FD1DE9 /* StrategyPattern */,
-				D3E4D26719F81F2400FD1DE9 /* StrategyPatternTests */,
+				D3E4D25119F81F2400FD1DE9 /* StrategySample */,
 				D3DA87851A00491100534CE7 /* StrategicControllers */,
 				D3DA87911A00491100534CE7 /* StrategicControllersTests */,
 				D3E4D25019F81F2400FD1DE9 /* Products */,
@@ -208,14 +175,13 @@
 			isa = PBXGroup;
 			children = (
 				D3E4D24F19F81F2400FD1DE9 /* StrategyPattern.app */,
-				D3E4D26419F81F2400FD1DE9 /* StrategyPatternTests.xctest */,
 				D3DA87841A00491100534CE7 /* StrategicControllers.framework */,
 				D3DA878E1A00491100534CE7 /* StrategicControllersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D3E4D25119F81F2400FD1DE9 /* StrategyPattern */ = {
+		D3E4D25119F81F2400FD1DE9 /* StrategySample */ = {
 			isa = PBXGroup;
 			children = (
 				D3C8D20C1AA11D09000973E3 /* RandomGenerators.swift */,
@@ -228,30 +194,13 @@
 				D3E4D25D19F81F2400FD1DE9 /* LaunchScreen.xib */,
 				D3E4D25219F81F2400FD1DE9 /* Supporting Files */,
 			);
-			path = StrategyPattern;
+			path = StrategySample;
 			sourceTree = "<group>";
 		};
 		D3E4D25219F81F2400FD1DE9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				D3E4D25319F81F2400FD1DE9 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D3E4D26719F81F2400FD1DE9 /* StrategyPatternTests */ = {
-			isa = PBXGroup;
-			children = (
-				D3E4D26A19F81F2400FD1DE9 /* StrategyPatternTests.swift */,
-				D3E4D26819F81F2400FD1DE9 /* Supporting Files */,
-			);
-			path = StrategyPatternTests;
-			sourceTree = "<group>";
-		};
-		D3E4D26819F81F2400FD1DE9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D3E4D26919F81F2400FD1DE9 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -326,24 +275,6 @@
 			productReference = D3E4D24F19F81F2400FD1DE9 /* StrategyPattern.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D3E4D26319F81F2400FD1DE9 /* StrategyPatternTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D3E4D27119F81F2400FD1DE9 /* Build configuration list for PBXNativeTarget "StrategyPatternTests" */;
-			buildPhases = (
-				D3E4D26019F81F2400FD1DE9 /* Sources */,
-				D3E4D26119F81F2400FD1DE9 /* Frameworks */,
-				D3E4D26219F81F2400FD1DE9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D3E4D26619F81F2400FD1DE9 /* PBXTargetDependency */,
-			);
-			name = StrategyPatternTests;
-			productName = StrategyPatternTests;
-			productReference = D3E4D26419F81F2400FD1DE9 /* StrategyPatternTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -353,9 +284,6 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Brian Thomas";
 				TargetAttributes = {
-					D338F2261A2FB62F0003A258 = {
-						CreatedOnToolsVersion = 6.1.1;
-					};
 					D3DA87831A00491100534CE7 = {
 						CreatedOnToolsVersion = 6.0.1;
 					};
@@ -366,10 +294,6 @@
 					D3E4D24E19F81F2300FD1DE9 = {
 						CreatedOnToolsVersion = 6.0.1;
 						DevelopmentTeam = UNGF9XXF78;
-					};
-					D3E4D26319F81F2400FD1DE9 = {
-						CreatedOnToolsVersion = 6.0.1;
-						TestTargetID = D3E4D24E19F81F2300FD1DE9;
 					};
 				};
 			};
@@ -387,10 +311,8 @@
 			projectRoot = "";
 			targets = (
 				D3E4D24E19F81F2300FD1DE9 /* StrategyPattern */,
-				D3E4D26319F81F2400FD1DE9 /* StrategyPatternTests */,
 				D3DA87831A00491100534CE7 /* StrategicControllers */,
 				D3DA878D1A00491100534CE7 /* StrategicControllersTests */,
-				D338F2261A2FB62F0003A258 /* StrategicControllersUniversal */,
 			);
 		};
 /* End PBXProject section */
@@ -420,30 +342,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3E4D26219F81F2400FD1DE9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		D338F22A1A2FB6410003A258 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "TARGET_NAME=StrategicControllers\nOS_SDK=iphoneos8.1\nSIM_SDK=iphonesimulator8.1\nLIPO_FOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\nxcodebuild -target ${TARGET_NAME} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk ${OS_SDK} BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target ${TARGET_NAME} -scheme ${TARGET_NAME} -sdk ${SIM_SDK} -configuration Debug clean build BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\nmkdir -p \"${LIPO_FOLDER}\"\ncp -R ${BUILD_DIR}/${CONFIGURATION}-iphoneos/${TARGET_NAME}.framework ${LIPO_FOLDER}/\nrm ${LIPO_FOLDER}/${TARGET_NAME}.framework/${TARGET_NAME}\n\nlipo -create -output \"${LIPO_FOLDER}/${TARGET_NAME}.framework/${TARGET_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${TARGET_NAME}.framework/${TARGET_NAME}\" \"${BUILD_DIR}/Debug-iphonesimulator/${TARGET_NAME}.framework/${TARGET_NAME}\"\n\n# Comment this out or change the final_outputfolder if needed\nFINAL_OUTPUTFOLDER=/users/${USER}/Desktop/\nmkdir -p \"${FINAL_OUTPUTFOLDER}\"\ncp -R ${LIPO_FOLDER}/${TARGET_NAME}.framework ${FINAL_OUTPUTFOLDER}/";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D3DA877F1A00491100534CE7 /* Sources */ = {
@@ -451,8 +350,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C8D20B1AA0ED02000973E3 /* StrategyProtocols.swift in Sources */,
-				D3DA87A41A00494500534CE7 /* ControllerStrategy.swift in Sources */,
-				D3DA87A61A00494C00534CE7 /* StrategicController.swift in Sources */,
+				D3C8D20F1AA120C7000973E3 /* ControllerStrategy.swift in Sources */,
+				D3C8D2111AA120D4000973E3 /* StrategicController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,14 +377,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3E4D26019F81F2400FD1DE9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D3E4D26B19F81F2400FD1DE9 /* StrategyPatternTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -503,11 +394,6 @@
 			isa = PBXTargetDependency;
 			target = D3DA87831A00491100534CE7 /* StrategicControllers */;
 			targetProxy = D3DA879A1A00491100534CE7 /* PBXContainerItemProxy */;
-		};
-		D3E4D26619F81F2400FD1DE9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D3E4D24E19F81F2300FD1DE9 /* StrategyPattern */;
-			targetProxy = D3E4D26519F81F2400FD1DE9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -531,20 +417,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D338F2281A2FB62F0003A258 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		D338F2291A2FB62F0003A258 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		D3DA879C1A00491100534CE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -702,7 +574,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = StrategyPattern/Info.plist;
+				INFOPLIST_FILE = StrategySample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -715,59 +587,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = StrategyPattern/Info.plist;
+				INFOPLIST_FILE = StrategySample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
-		D3E4D27219F81F2400FD1DE9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = StrategyPatternTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StrategyPattern.app/StrategyPattern";
-			};
-			name = Debug;
-		};
-		D3E4D27319F81F2400FD1DE9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = StrategyPatternTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StrategyPattern.app/StrategyPattern";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D338F2271A2FB62F0003A258 /* Build configuration list for PBXAggregateTarget "StrategicControllersUniversal" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D338F2281A2FB62F0003A258 /* Debug */,
-				D338F2291A2FB62F0003A258 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		D3DA87A01A00491100534CE7 /* Build configuration list for PBXNativeTarget "StrategicControllers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -800,15 +629,6 @@
 			buildConfigurations = (
 				D3E4D26F19F81F2400FD1DE9 /* Debug */,
 				D3E4D27019F81F2400FD1DE9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D3E4D27119F81F2400FD1DE9 /* Build configuration list for PBXNativeTarget "StrategyPatternTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D3E4D27219F81F2400FD1DE9 /* Debug */,
-				D3E4D27319F81F2400FD1DE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

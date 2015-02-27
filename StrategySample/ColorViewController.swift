@@ -27,9 +27,6 @@ class ColorViewController : StrategicController {
   @IBOutlet var colorView : UIView!
   var startingColor :UIColor = UIColor.lightGrayColor()
   
-  var someModels = []
-  var actionOnModelSelect: ((SomeModel) -> Void) = { model in }
-  
   required init(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
   }
