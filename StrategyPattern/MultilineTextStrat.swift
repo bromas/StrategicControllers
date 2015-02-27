@@ -9,33 +9,27 @@
 import Foundation
 import StrategicControllers
 
-@objc protocol MultilineTextController {
-    
-    var view: UIView {get set}
-    func labelsNeedingSized() -> [UILabel]
-    
-}
-
-class MultilineGeneric : MultilineTextController {
-    var view :UIView = UIView()
-    init() { }
-    func labelsNeedingSized() -> [UILabel] { return [UILabel]() }
-}
-
-class MultilineTextStrat : ControllerStrategy {
-    
-    lazy var textController : MultilineTextController = {
-        var optionalCast = self.managedController as? MultilineTextController
-        assert(optionalCast != nil, "Could not cast controller \(self.managedController) to expected strategic subclass")
-        return optionalCast ?? MultilineGeneric()
-        }()
-    
-    override func viewDidLayoutSubviews() {
-        let labels = textController.labelsNeedingSized()
-        for label in labels {
-            label.preferredMaxLayoutWidth = label.frame.size.width
-            textController.view.layoutIfNeeded()
-        }
-    }
-    
-}
+//@objc protocol MultilineTextController {
+//    
+//    var view: UIView {get set}
+//    func labelsNeedingSized() -> [UILabel]
+//    
+//}
+//
+//class MultilineGeneric : MultilineTextController {
+//    var view :UIView = UIView()
+//    init() { }
+//    func labelsNeedingSized() -> [UILabel] { return [UILabel]() }
+//}
+//
+//class MultilineTextStrat : ControllerStrategy {
+//   
+//    override func viewDidLayoutSubviews() {
+//        let labels = textController.labelsNeedingSized()
+//        for label in labels {
+//            label.preferredMaxLayoutWidth = label.frame.size.width
+//            textController.view.layoutIfNeeded()
+//        }
+//    }
+//    
+//}

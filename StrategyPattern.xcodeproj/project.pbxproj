@@ -22,27 +22,23 @@
 
 /* Begin PBXBuildFile section */
 		D330708E1A04318100139A42 /* MultilineTextStrat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D330708D1A04318100139A42 /* MultilineTextStrat.swift */; };
-		D33070911A0456DC00139A42 /* SomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33070901A0456DC00139A42 /* SomeController.swift */; };
-		D3DA87471A0027AC00534CE7 /* SomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DA87461A0027AC00534CE7 /* SomeModel.swift */; };
+		D3C8D20B1AA0ED02000973E3 /* StrategyProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8D20A1AA0ED02000973E3 /* StrategyProtocols.swift */; };
+		D3C8D20D1AA11D09000973E3 /* RandomGenerators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8D20C1AA11D09000973E3 /* RandomGenerators.swift */; };
 		D3DA87891A00491100534CE7 /* StrategicControllers.h in Headers */ = {isa = PBXBuildFile; fileRef = D3DA87881A00491100534CE7 /* StrategicControllers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3DA87951A00491100534CE7 /* StrategicControllersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DA87941A00491100534CE7 /* StrategicControllersTests.swift */; };
 		D3DA87981A00491100534CE7 /* StrategicControllers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DA87841A00491100534CE7 /* StrategicControllers.framework */; };
 		D3DA87991A00491100534CE7 /* StrategicControllers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3DA87841A00491100534CE7 /* StrategicControllers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D3DA87A31A00494100534CE7 /* BaseStrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DA87431A00045700534CE7 /* BaseStrategyProtocol.swift */; };
 		D3DA87A41A00494500534CE7 /* ControllerStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4D27A19F820F900FD1DE9 /* ControllerStrategy.swift */; };
-		D3DA87A51A00494800534CE7 /* CompositeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7399A19FFE40E000BE869 /* CompositeStrategy.swift */; };
 		D3DA87A61A00494C00534CE7 /* StrategicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4D27819F81F7B00FD1DE9 /* StrategicController.swift */; };
-		D3DA87AF1A00599A00534CE7 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DA87AE1A00599A00534CE7 /* Stack.swift */; };
 		D3E4D25519F81F2400FD1DE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4D25419F81F2400FD1DE9 /* AppDelegate.swift */; };
 		D3E4D25A19F81F2400FD1DE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E4D25819F81F2400FD1DE9 /* Main.storyboard */; };
 		D3E4D25C19F81F2400FD1DE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3E4D25B19F81F2400FD1DE9 /* Images.xcassets */; };
 		D3E4D25F19F81F2400FD1DE9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3E4D25D19F81F2400FD1DE9 /* LaunchScreen.xib */; };
 		D3E4D26B19F81F2400FD1DE9 /* StrategyPatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4D26A19F81F2400FD1DE9 /* StrategyPatternTests.swift */; };
-		D3E4D27F19F84B9000FD1DE9 /* ColorChangeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4D27E19F84B9000FD1DE9 /* ColorChangeController.swift */; };
-		D3E4D28119F84C5500FD1DE9 /* RedStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4D28019F84C5500FD1DE9 /* RedStrategy.swift */; };
-		D3E4D28319F84C6600FD1DE9 /* BlueStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4D28219F84C6600FD1DE9 /* BlueStrategy.swift */; };
-		D3F7399819FEC709000BE869 /* ApplicationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7399719FEC709000BE869 /* ApplicationVC.swift */; };
-		D3F7399E1A0000D7000BE869 /* SampleGenericsCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7399D1A0000D7000BE869 /* SampleGenericsCode.swift */; };
+		D3E4D27F19F84B9000FD1DE9 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4D27E19F84B9000FD1DE9 /* ColorViewController.swift */; };
+		D3E4D28119F84C5500FD1DE9 /* MovableStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4D28019F84C5500FD1DE9 /* MovableStrategy.swift */; };
+		D3E4D28319F84C6600FD1DE9 /* AnimatingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4D28219F84C6600FD1DE9 /* AnimatingStrategy.swift */; };
+		D3F7399819FEC709000BE869 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7399719FEC709000BE869 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,16 +88,14 @@
 
 /* Begin PBXFileReference section */
 		D330708D1A04318100139A42 /* MultilineTextStrat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultilineTextStrat.swift; sourceTree = "<group>"; };
-		D33070901A0456DC00139A42 /* SomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeController.swift; sourceTree = "<group>"; };
-		D3DA87431A00045700534CE7 /* BaseStrategyProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseStrategyProtocol.swift; path = ../StrategyPattern/BaseStrategyProtocol.swift; sourceTree = "<group>"; };
-		D3DA87461A0027AC00534CE7 /* SomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeModel.swift; sourceTree = "<group>"; };
+		D3C8D20A1AA0ED02000973E3 /* StrategyProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrategyProtocols.swift; sourceTree = "<group>"; };
+		D3C8D20C1AA11D09000973E3 /* RandomGenerators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomGenerators.swift; sourceTree = "<group>"; };
 		D3DA87841A00491100534CE7 /* StrategicControllers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StrategicControllers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3DA87871A00491100534CE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3DA87881A00491100534CE7 /* StrategicControllers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategicControllers.h; sourceTree = "<group>"; };
 		D3DA878E1A00491100534CE7 /* StrategicControllersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrategicControllersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3DA87931A00491100534CE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3DA87941A00491100534CE7 /* StrategicControllersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategicControllersTests.swift; sourceTree = "<group>"; };
-		D3DA87AE1A00599A00534CE7 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		D3E4D24F19F81F2400FD1DE9 /* StrategyPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrategyPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E4D25319F81F2400FD1DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3E4D25419F81F2400FD1DE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,12 +107,10 @@
 		D3E4D26A19F81F2400FD1DE9 /* StrategyPatternTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyPatternTests.swift; sourceTree = "<group>"; };
 		D3E4D27819F81F7B00FD1DE9 /* StrategicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StrategicController.swift; path = ../StrategyPattern/StrategicController.swift; sourceTree = "<group>"; };
 		D3E4D27A19F820F900FD1DE9 /* ControllerStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControllerStrategy.swift; path = ../StrategyPattern/ControllerStrategy.swift; sourceTree = "<group>"; };
-		D3E4D27E19F84B9000FD1DE9 /* ColorChangeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorChangeController.swift; sourceTree = "<group>"; };
-		D3E4D28019F84C5500FD1DE9 /* RedStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedStrategy.swift; sourceTree = "<group>"; };
-		D3E4D28219F84C6600FD1DE9 /* BlueStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueStrategy.swift; sourceTree = "<group>"; };
-		D3F7399719FEC709000BE869 /* ApplicationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationVC.swift; sourceTree = "<group>"; };
-		D3F7399A19FFE40E000BE869 /* CompositeStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompositeStrategy.swift; path = ../StrategyPattern/CompositeStrategy.swift; sourceTree = "<group>"; };
-		D3F7399D1A0000D7000BE869 /* SampleGenericsCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleGenericsCode.swift; sourceTree = "<group>"; };
+		D3E4D27E19F84B9000FD1DE9 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		D3E4D28019F84C5500FD1DE9 /* MovableStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovableStrategy.swift; sourceTree = "<group>"; };
+		D3E4D28219F84C6600FD1DE9 /* AnimatingStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatingStrategy.swift; sourceTree = "<group>"; };
+		D3F7399719FEC709000BE869 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,26 +149,19 @@
 		D330708C1A04315100139A42 /* Strategies */ = {
 			isa = PBXGroup;
 			children = (
+				D3E4D28019F84C5500FD1DE9 /* MovableStrategy.swift */,
+				D3E4D28219F84C6600FD1DE9 /* AnimatingStrategy.swift */,
 				D330708D1A04318100139A42 /* MultilineTextStrat.swift */,
 			);
 			name = Strategies;
-			sourceTree = "<group>";
-		};
-		D330708F1A0456C500139A42 /* SomeController */ = {
-			isa = PBXGroup;
-			children = (
-				D33070901A0456DC00139A42 /* SomeController.swift */,
-			);
-			name = SomeController;
 			sourceTree = "<group>";
 		};
 		D3DA87851A00491100534CE7 /* StrategicControllers */ = {
 			isa = PBXGroup;
 			children = (
 				D3DA87881A00491100534CE7 /* StrategicControllers.h */,
-				D3DA87431A00045700534CE7 /* BaseStrategyProtocol.swift */,
+				D3C8D20A1AA0ED02000973E3 /* StrategyProtocols.swift */,
 				D3E4D27A19F820F900FD1DE9 /* ControllerStrategy.swift */,
-				D3F7399A19FFE40E000BE869 /* CompositeStrategy.swift */,
 				D3E4D27819F81F7B00FD1DE9 /* StrategicController.swift */,
 				D3DA87861A00491100534CE7 /* Supporting Files */,
 			);
@@ -233,11 +218,11 @@
 		D3E4D25119F81F2400FD1DE9 /* StrategyPattern */ = {
 			isa = PBXGroup;
 			children = (
+				D3C8D20C1AA11D09000973E3 /* RandomGenerators.swift */,
 				D330708C1A04315100139A42 /* Strategies */,
 				D3E4D25419F81F2400FD1DE9 /* AppDelegate.swift */,
-				D3F7399719FEC709000BE869 /* ApplicationVC.swift */,
-				D3E4D27619F81F3E00FD1DE9 /* Model */,
-				D3E4D27419F81F3000FD1DE9 /* Control */,
+				D3F7399719FEC709000BE869 /* ViewController.swift */,
+				D3E4D27E19F84B9000FD1DE9 /* ColorViewController.swift */,
 				D3E4D25819F81F2400FD1DE9 /* Main.storyboard */,
 				D3E4D25B19F81F2400FD1DE9 /* Images.xcassets */,
 				D3E4D25D19F81F2400FD1DE9 /* LaunchScreen.xib */,
@@ -269,43 +254,6 @@
 				D3E4D26919F81F2400FD1DE9 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D3E4D27419F81F3000FD1DE9 /* Control */ = {
-			isa = PBXGroup;
-			children = (
-				D330708F1A0456C500139A42 /* SomeController */,
-				D3F7399C19FFE6C7000BE869 /* ColorChange */,
-			);
-			name = Control;
-			sourceTree = "<group>";
-		};
-		D3E4D27619F81F3E00FD1DE9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D3F7399D1A0000D7000BE869 /* SampleGenericsCode.swift */,
-				D3DA87461A0027AC00534CE7 /* SomeModel.swift */,
-				D3DA87AE1A00599A00534CE7 /* Stack.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		D3F7399919FFE3DD000BE869 /* ColorChangeStrategies */ = {
-			isa = PBXGroup;
-			children = (
-				D3E4D28019F84C5500FD1DE9 /* RedStrategy.swift */,
-				D3E4D28219F84C6600FD1DE9 /* BlueStrategy.swift */,
-			);
-			name = ColorChangeStrategies;
-			sourceTree = "<group>";
-		};
-		D3F7399C19FFE6C7000BE869 /* ColorChange */ = {
-			isa = PBXGroup;
-			children = (
-				D3F7399919FFE3DD000BE869 /* ColorChangeStrategies */,
-				D3E4D27E19F84B9000FD1DE9 /* ColorChangeController.swift */,
-			);
-			name = ColorChange;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -502,10 +450,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C8D20B1AA0ED02000973E3 /* StrategyProtocols.swift in Sources */,
 				D3DA87A41A00494500534CE7 /* ControllerStrategy.swift in Sources */,
-				D3DA87A31A00494100534CE7 /* BaseStrategyProtocol.swift in Sources */,
 				D3DA87A61A00494C00534CE7 /* StrategicController.swift in Sources */,
-				D3DA87A51A00494800534CE7 /* CompositeStrategy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,16 +468,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3DA87471A0027AC00534CE7 /* SomeModel.swift in Sources */,
-				D3E4D28319F84C6600FD1DE9 /* BlueStrategy.swift in Sources */,
-				D3E4D28119F84C5500FD1DE9 /* RedStrategy.swift in Sources */,
+				D3C8D20D1AA11D09000973E3 /* RandomGenerators.swift in Sources */,
+				D3E4D28319F84C6600FD1DE9 /* AnimatingStrategy.swift in Sources */,
+				D3E4D28119F84C5500FD1DE9 /* MovableStrategy.swift in Sources */,
 				D330708E1A04318100139A42 /* MultilineTextStrat.swift in Sources */,
-				D3F7399E1A0000D7000BE869 /* SampleGenericsCode.swift in Sources */,
-				D3DA87AF1A00599A00534CE7 /* Stack.swift in Sources */,
-				D3F7399819FEC709000BE869 /* ApplicationVC.swift in Sources */,
-				D3E4D27F19F84B9000FD1DE9 /* ColorChangeController.swift in Sources */,
+				D3F7399819FEC709000BE869 /* ViewController.swift in Sources */,
+				D3E4D27F19F84B9000FD1DE9 /* ColorViewController.swift in Sources */,
 				D3E4D25519F81F2400FD1DE9 /* AppDelegate.swift in Sources */,
-				D33070911A0456DC00139A42 /* SomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -822,6 +766,7 @@
 				D338F2291A2FB62F0003A258 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3DA87A01A00491100534CE7 /* Build configuration list for PBXNativeTarget "StrategicControllers" */ = {
 			isa = XCConfigurationList;
