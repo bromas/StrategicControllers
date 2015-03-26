@@ -20,12 +20,16 @@ class SomeModel {
 class ColorViewController : StrategicController {
   
   @IBAction func buttonTap () { actionOnButtonTap() }
-  var actionOnButtonTap: (() -> Void) = { }
+  var actionOnButtonTap: (() -> Void) = {
+    UIAlertView(title: "Default", message: "Unconfigured, default behavior can be performed.", delegate: nil, cancelButtonTitle: nil, otherButtonTitles:"Ok").show()
+  }
   
-  @IBAction func resignModal () { self.dismissViewControllerAnimated(true, completion: nil) }
+  @IBAction func resignModal () {
+    self.dismissViewControllerAnimated(true, completion: nil)
+  }
   
   @IBOutlet var colorView : UIView!
-  var startingColor :UIColor = UIColor.lightGrayColor()
+  var backgroundColor :UIColor = UIColor.lightGrayColor()
   
   required init(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
@@ -37,11 +41,18 @@ class ColorViewController : StrategicController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    colorView.backgroundColor = startingColor
+    colorView.backgroundColor = backgroundColor
   }
   
   func configureWithColor(color :UIColor) {
-    startingColor = color
+    backgroundColor = color
+    configureViewForColor(backgroundColor)
+  }
+  
+  func configureViewForColor(color: UIColor) {
+    if self.isViewLoaded() {
+      colorView.backgroundColor = color
+    }
   }
   
 }
