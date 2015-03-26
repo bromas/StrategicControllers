@@ -17,7 +17,7 @@ class ViewController : UIViewController {
   }
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    let controller = segue.destinationViewController as ColorViewController
+    let controller = segue.destinationViewController as! ColorViewController
     if segue.identifier == "Animating" {
       controller.configureWithColor(randomColor())
       controller.setStrategy(AnimatingStrategy(color: randomColor()))

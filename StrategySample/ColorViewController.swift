@@ -35,7 +35,7 @@ class ColorViewController : StrategicController {
     super.init(coder: aDecoder)
   }
   
-  required init() {
+  required override init() {
     super.init()
   }
   

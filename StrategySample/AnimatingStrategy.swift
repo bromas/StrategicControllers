@@ -36,7 +36,7 @@ class animatingStrategy<T> : ControllerStrategy<ColorViewController> {
   
   func controllerBackgroundAnimationToColor(newColor: UIColor) -> CABasicAnimation {
     let animation = CABasicAnimation(keyPath: "backgroundColor")
-    animation.fromValue = (self.controller.view.layer.presentationLayer() as CALayer).backgroundColor?
+    animation.fromValue = (self.controller.view.layer.presentationLayer() as! CALayer).backgroundColor
     animation.duration = 1.0
     animation.toValue = newColor.CGColor
     return animation

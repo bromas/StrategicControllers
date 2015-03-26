@@ -40,10 +40,10 @@ class movableStrategy<T> : ControllerStrategy<ColorViewController> {
     if let found = container {
       view.setTranslatesAutoresizingMaskIntoConstraints(false)
       controller.view.addSubview(view)
-      let constraint1 = NSLayoutConstraint.constraintsWithVisualFormat("V:[view(60)]", options: NSLayoutFormatOptions(0), metrics: nil, views: ["view": view]).first! as NSLayoutConstraint
-      let constraint2 = NSLayoutConstraint.constraintsWithVisualFormat("V:|-40-[view]", options: NSLayoutFormatOptions(0), metrics: nil, views: ["view": view]).first! as NSLayoutConstraint
-      let constraint3 = NSLayoutConstraint.constraintsWithVisualFormat("H:[view(60)]", options: NSLayoutFormatOptions(0), metrics: nil, views: ["view": view]).first! as NSLayoutConstraint
-      let constraint4 = NSLayoutConstraint.constraintsWithVisualFormat("H:|-\((controller.view.frame.size.width - 60) / 2)-[view]", options: NSLayoutFormatOptions(0), metrics: nil, views: ["view": view]).first! as NSLayoutConstraint
+      let constraint1 = NSLayoutConstraint.constraintsWithVisualFormat("V:[view(60)]", options: NSLayoutFormatOptions(0), metrics: nil, views: ["view": view]).first! as! NSLayoutConstraint
+      let constraint2 = NSLayoutConstraint.constraintsWithVisualFormat("V:|-40-[view]", options: NSLayoutFormatOptions(0), metrics: nil, views: ["view": view]).first! as! NSLayoutConstraint
+      let constraint3 = NSLayoutConstraint.constraintsWithVisualFormat("H:[view(60)]", options: NSLayoutFormatOptions(0), metrics: nil, views: ["view": view]).first! as! NSLayoutConstraint
+      let constraint4 = NSLayoutConstraint.constraintsWithVisualFormat("H:|-\((controller.view.frame.size.width - 60) / 2)-[view]", options: NSLayoutFormatOptions(0), metrics: nil, views: ["view": view]).first! as! NSLayoutConstraint
       controller.view.addConstraint(constraint1)
       controller.view.addConstraint(constraint2)
       controller.view.addConstraint(constraint3)
@@ -57,7 +57,7 @@ class movableStrategy<T> : ControllerStrategy<ColorViewController> {
     CATransaction.begin()
     let animation = CABasicAnimation(keyPath: "position")
     let newCoords = randomCoords()
-    let oldValue = (view.layer.presentationLayer() as CALayer).position
+    let oldValue = (view.layer.presentationLayer() as! CALayer).position
     animation.fromValue = NSValue(CGPoint: oldValue)
     animation.duration = 0.6
     animation.toValue = NSValue(CGPoint: newCoords)

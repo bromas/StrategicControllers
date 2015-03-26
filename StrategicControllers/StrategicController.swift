@@ -13,8 +13,8 @@ public class StrategicController : UIViewController, StrategicActor {
   
   private var strategy :Strategy?
   
-  required override public init() {
-    super.init()
+  public init() {
+    super.init(nibName: nil, bundle: nil)
   }
   
   required public init(coder aDecoder: NSCoder) {
