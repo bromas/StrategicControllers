@@ -27,6 +27,7 @@ class movableStrategy<T> : ControllerStrategy<ColorViewController> {
   override func viewDidLoad() {
     addViewAboveColorView()
     view.backgroundColor = startingColor
+    
     controller.actionOnButtonTap = { [unowned self] in
       let newCoords = randomCoords()
       let animation = self.viewFrameAnimationPosition(newCoords)

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D330708E1A04318100139A42 /* MultilineTextStrat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D330708D1A04318100139A42 /* MultilineTextStrat.swift */; };
+		D39D35651ADC58F80091CF0F /* CompositeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39D35641ADC58F80091CF0F /* CompositeStrategy.swift */; };
 		D3C8D20B1AA0ED02000973E3 /* StrategyProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8D20A1AA0ED02000973E3 /* StrategyProtocols.swift */; };
 		D3C8D20D1AA11D09000973E3 /* RandomGenerators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8D20C1AA11D09000973E3 /* RandomGenerators.swift */; };
 		D3C8D20F1AA120C7000973E3 /* ControllerStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8D20E1AA120C7000973E3 /* ControllerStrategy.swift */; };
@@ -67,6 +68,7 @@
 
 /* Begin PBXFileReference section */
 		D330708D1A04318100139A42 /* MultilineTextStrat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultilineTextStrat.swift; sourceTree = "<group>"; };
+		D39D35641ADC58F80091CF0F /* CompositeStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeStrategy.swift; sourceTree = "<group>"; };
 		D3C8D20A1AA0ED02000973E3 /* StrategyProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrategyProtocols.swift; sourceTree = "<group>"; };
 		D3C8D20C1AA11D09000973E3 /* RandomGenerators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomGenerators.swift; sourceTree = "<group>"; };
 		D3C8D20E1AA120C7000973E3 /* ControllerStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerStrategy.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				D3DA87881A00491100534CE7 /* StrategicControllers.h */,
 				D3C8D20A1AA0ED02000973E3 /* StrategyProtocols.swift */,
 				D3C8D20E1AA120C7000973E3 /* ControllerStrategy.swift */,
+				D39D35641ADC58F80091CF0F /* CompositeStrategy.swift */,
 				D3C8D2101AA120D4000973E3 /* StrategicController.swift */,
 				D3DA87861A00491100534CE7 /* Supporting Files */,
 			);
@@ -352,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D39D35651ADC58F80091CF0F /* CompositeStrategy.swift in Sources */,
 				D3C8D20B1AA0ED02000973E3 /* StrategyProtocols.swift in Sources */,
 				D3C8D20F1AA120C7000973E3 /* ControllerStrategy.swift in Sources */,
 				D3C8D2111AA120D4000973E3 /* StrategicController.swift in Sources */,

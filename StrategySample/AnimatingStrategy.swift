@@ -24,7 +24,7 @@ class animatingStrategy<T> : ControllerStrategy<ColorViewController> {
   override func viewDidLoad() {
     
     controller.view.backgroundColor = startingColor
-    
+
     controller.actionOnButtonTap = { [unowned self] in
       let newColor = randomColor()
       let animation = self.controllerBackgroundAnimationToColor(newColor)
