@@ -39,7 +39,7 @@ class animatingStrategy<T> : ControllerStrategy<StrategicController> {
 
 #### What I'm trying to solve...
 
-Solve? Nothing I guess. Maybe that's the part where you tune this out. But I'm really unsatisfied with the implementations I've seen for adding contextual logic to a UIViewController. For example:
+Basically, I'm really unsatisfied with the implementations I've seen for adding contextual logic to a UIViewController. For example:
 
 ```swift
 self.navigationController.pushViewController(...)
@@ -74,4 +74,3 @@ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
       controller.setStrategy(MovableStrategy())
     }
 }
-```
