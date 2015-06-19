@@ -84,7 +84,7 @@ public class CompositeStrategy<T: StrategicActor> : Strategy {
   
   public func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool {
     for key in strategyKeys {
-      var shouldPerform = strategies[key]?.shouldPerformSegueWithIdentifier(identifier, sender: sender)
+      let shouldPerform = strategies[key]?.shouldPerformSegueWithIdentifier(identifier, sender: sender)
       if let answer = shouldPerform {
         if !answer { return false }
       }

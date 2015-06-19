@@ -64,8 +64,8 @@ public class StrategicController : UIViewController, StrategicActor {
     strategy?.prepareForSegue(segue, sender: sender)
   }
   
-  public override func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool {
-    var shouldPerform = strategy?.shouldPerformSegueWithIdentifier(identifier, sender: sender)
+  public override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+    let shouldPerform = strategy?.shouldPerformSegueWithIdentifier(identifier, sender: sender)
     if let answer = shouldPerform {
       if !answer { return false }
     }

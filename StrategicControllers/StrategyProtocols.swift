@@ -41,5 +41,5 @@ public protocol StrategicActor {
   func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator)
   
   func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
-  func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool
+  func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool
 }

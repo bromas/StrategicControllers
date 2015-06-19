@@ -38,13 +38,13 @@ class movableStrategy<T> : ControllerStrategy<ColorViewController> {
   
   func addViewAboveColorView () {
     let container = controller.colorView
-    if let found = container {
-      view.setTranslatesAutoresizingMaskIntoConstraints(false)
+    if let _ = container {
+      view.translatesAutoresizingMaskIntoConstraints = false
       controller.view.addSubview(view)
-      let constraint1 = NSLayoutConstraint.constraintsWithVisualFormat("V:[view(60)]", options: NSLayoutFormatOptions(0), metrics: nil, views: ["view": view]).first! as! NSLayoutConstraint
-      let constraint2 = NSLayoutConstraint.constraintsWithVisualFormat("V:|-40-[view]", options: NSLayoutFormatOptions(0), metrics: nil, views: ["view": view]).first! as! NSLayoutConstraint
-      let constraint3 = NSLayoutConstraint.constraintsWithVisualFormat("H:[view(60)]", options: NSLayoutFormatOptions(0), metrics: nil, views: ["view": view]).first! as! NSLayoutConstraint
-      let constraint4 = NSLayoutConstraint.constraintsWithVisualFormat("H:|-\((controller.view.frame.size.width - 60) / 2)-[view]", options: NSLayoutFormatOptions(0), metrics: nil, views: ["view": view]).first! as! NSLayoutConstraint
+      let constraint1 = NSLayoutConstraint.constraintsWithVisualFormat("V:[view(60)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view": view]).first!
+      let constraint2 = NSLayoutConstraint.constraintsWithVisualFormat("V:|-40-[view]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view": view]).first!
+      let constraint3 = NSLayoutConstraint.constraintsWithVisualFormat("H:[view(60)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view": view]).first!
+      let constraint4 = NSLayoutConstraint.constraintsWithVisualFormat("H:|-\((controller.view.frame.size.width - 60) / 2)-[view]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view": view]).first!
       controller.view.addConstraint(constraint1)
       controller.view.addConstraint(constraint2)
       controller.view.addConstraint(constraint3)
